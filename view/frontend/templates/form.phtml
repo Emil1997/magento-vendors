@@ -1,5 +1,10 @@
-<form class="form" id="register-vendor" method="POST" data-mage-init='{"validation": {}}'>
-    <h1><?= $block->getActionMethod() ?></h1>
+<form
+    class="form"
+    id="register-vendor"
+    method="POST"
+    data-mage-init='{"validation": {}}'
+    action="<?= $block->getActionMethod() ?>">
+
     <fieldset class="fieldset">
         <div class="field name required">
             <label class="label" for="business-name"><span>Business Name</span></label>
@@ -10,7 +15,7 @@
         <div class="field vat required">
             <label class="label" for="vat"><span>Vat Number</span></label>
             <div class="control">
-                <input name="vat" id="vat" title="Vat Number" value=""  class="input-text" type="text" data-validate='{"required":true, "number": true, "min": 7, "max": 7 }'/>
+                <input name="vat" id="vat" title="Vat Number" value=""  class="input-text" type="text" data-validate='{"required":true, "number": true }'/>
             </div>
         </div>
         <div class="field email required">
@@ -22,7 +27,7 @@
         <div class="field phone required">
             <label class="label" for="phone"><span>Phone Number</span></label>
             <div class="control">
-                <input name="phone" id="phone" title="Phone Number" value=""  class="input-text" type="text" data-validate='{"required":true, "number": true, "min": 10 }'/>
+                <input name="phone" id="phone" title="Phone Number" value=""  class="input-text" type="text" data-validate='{"required":true, "number": true }'/>
             </div>
         </div>
     </fieldset>
