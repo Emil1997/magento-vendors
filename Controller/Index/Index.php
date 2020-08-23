@@ -1,12 +1,12 @@
 <?php
 
-namespace Elite\Vendors\Controller\Page;
+namespace Elite\Vendors\Controller\Index;
 
 use Magento\Framework\App\Action\Action;
 use Magento\Framework\Controller\ResultFactory;
 use Magento\Framework\View\Result\Page;
 
-class View extends Action
+class Index extends Action
 {
     public function execute()
     {
