@@ -1,0 +1,35 @@
+<form class="form" id="register-vendor" method="POST" data-mage-init='{"validation": {}}'>
+    <fieldset class="fieldset">
+        <div class="field name required">
+            <label class="label" for="business-name"><span>Business Name</span></label>
+            <div class="control">
+                <input name="company" id="business-name" title="Business Name" value=""  class="input-text" type="text" data-validate='{"required":true}'/>
+            </div>
+        </div>
+        <div class="field vat required">
+            <label class="label" for="vat"><span>Vat Number</span></label>
+            <div class="control">
+                <input name="vat" id="vat" title="Vat Number" value=""  class="input-text" type="text" data-validate='{"required":true, "number": true, "min": 7, "max": 7 }'/>
+            </div>
+        </div>
+        <div class="field email required">
+            <label class="label" for="email"><span>Email Address</span></label>
+            <div class="control">
+                <input name="email" id="email" title="Email Address" value=""  class="input-text" type="text" data-validate='{"required":true, "email": true }'/>
+            </div>
+        </div>
+        <div class="field phone required">
+            <label class="label" for="phone"><span>Phone Number</span></label>
+            <div class="control">
+                <input name="phone" id="phone" title="Phone Number" value=""  class="input-text" type="text" data-validate='{"required":true, "number": true, "min": 10 }'/>
+            </div>
+        </div>
+    </fieldset>
+    <div class="actions-toolbar">
+        <div class="primary">
+            <button type="submit" title="Submit" class="action submit primary">
+                <span>Submit</span>
+            </button>
+        </div>
+    </div>
+</form>
