@@ -14,6 +14,6 @@ class Form extends Template
 
     public function getActionMethod()
     {
-        return 'vendors/index/register';
+        return $this->getUrl('vendors-registration/index/register', ['secure' => true]);
     }
 }
