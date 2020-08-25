@@ -3,7 +3,7 @@
     <acl>
         <resources>
             <resource id="Magento_Backend::admin">
-                <resource id="Elite_Vendors::vendors" title="Elite" sortOrder="900"></resource>
+                <resource id="Elite_Vendors::vendors" title="Elite" sortOrder="900"/>
             </resource>
         </resources>
     </acl>
