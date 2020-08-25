@@ -9,6 +9,11 @@ use Magento\Framework\Setup\SchemaSetupInterface;
 class InstallSchema implements InstallSchemaInterface
 {
 
+    /**
+     * @param SchemaSetupInterface $setup
+     * @param ModuleContextInterface $context
+     * @throws \Exception
+     */
     public function install(SchemaSetupInterface $setup, ModuleContextInterface $context)
     {
         try {

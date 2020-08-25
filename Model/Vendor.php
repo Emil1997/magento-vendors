@@ -2,7 +2,10 @@
 
 namespace Elite\Vendors\Model;
 
-class Vendor extends \Magento\Framework\Model\AbstractModel implements \Magento\Framework\DataObject\IdentityInterface
+use \Magento\Framework\Model\AbstractModel;
+use \Magento\Framework\DataObject\IdentityInterface;
+
+class Vendor extends AbstractModel implements IdentityInterface
 {
 
     const CACHE_TAG = 'elite_vendors_registration';
@@ -16,11 +19,17 @@ class Vendor extends \Magento\Framework\Model\AbstractModel implements \Magento\
         $this->_init('Elite\Vendors\Model\ResourceModel\Vendor');
     }
 
+    /**
+     * @return string[]
+     */
     public function getIdentities()
     {
         return [self::CACHE_TAG . '_' . $this->getId()];
     }
 
+    /**
+     * @return array
+     */
     public function getDefaultValues()
     {
         return [];
