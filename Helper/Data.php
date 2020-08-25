@@ -5,7 +5,7 @@ namespace Elite\Vendors\Helper;
 use Magento\Framework\App\Helper\AbstractHelper;
 use Magento\Store\Model\ScopeInterface;
 
-class Data
+class Data extends AbstractHelper
 {
     /**
      * @param $field
@@ -24,7 +24,6 @@ class Data
      */
     public function getGeneralConfig($code, $storeId = null)
     {
-
-        return $this->getConfigValue(self::XML_PATH_HELLOWORLD .'general/'. $code, $storeId);
+        return $this->getConfigValue( 'vendors/general/'. $code, $storeId);
     }
 }
