@@ -11,6 +11,7 @@ use Elite\Vendors\Helper\Data as HelperData;
 class Index extends Action
 {
     private $helperData;
+    private $url;
 
     public function __construct(Context $context, HelperData $helperData)
     {
@@ -24,10 +25,11 @@ class Index extends Action
         $resultRedirect = $this->resultRedirectFactory->create();
 
         /**
-         * If Module Is Disable Redirect To Homepage
+         * If Module Is Disable Redirect To 404
          */
         if($enabled != 1) {
-            $resultRedirect->setPath('*/*/');
+            $resultRedirect->setPath('noroute');
+            return $resultRedirect;
         }
 
         /** @var Page $resultPage */
