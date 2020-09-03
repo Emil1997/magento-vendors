@@ -1,0 +1,7 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
+    <router id="admin">
+        <route id="elite_vendors" frontName="vendors_registration">
+            <module name="Elite_Vendors"/>
+        </route>
+    </router>
+</config>

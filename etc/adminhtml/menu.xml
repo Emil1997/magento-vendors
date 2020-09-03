@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+    <menu>
+        <add id="Elite_Vendors::elite_vendors" title="Vendors" module="Elite_Vendors"
+             resource="Elite_Vendors::elite_vendors" sortOrder="100" action="vendors_registration/index"/>
+    </menu>
+</config>
