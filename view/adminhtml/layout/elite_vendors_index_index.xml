@@ -7,7 +7,8 @@
     </referenceBlock>
     <body>
         <referenceContainer name="content">
-            <block class="Magento\Backend\Block\Template" template="Elite_Vendors::index.phtml"/>
+            <!-- List Vendors -->
+            <uiComponent name="elite_vendors_vendors_listing"/>
         </referenceContainer>
     </body>
 </page>

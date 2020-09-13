@@ -2,7 +2,7 @@
     <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
         <arguments>
             <argument name="collections" xsi:type="array">
-                <item name="mageplaza_helloworld_vendors_listing_data_source" xsi:type="string">Elite\Vendors\Model\ResourceModel\Vendor\Grid\Collection</item>
+                <item name="elite_vendors_vendors_listing_data_source" xsi:type="string">Elite\Vendors\Model\ResourceModel\Vendor\Grid\Collection</item>
             </argument>
         </arguments>
     </type>
